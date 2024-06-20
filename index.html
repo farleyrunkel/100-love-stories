@@ -28,26 +28,19 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      color: #fff; 
+      color: #fff;
       z-index: 1;
-      width: 80%; 
-      height: 60%; 
-      padding: 2rem; 
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 80%; /* Example: Set width to 80% of its container */
+      height: 60%; /* Example: Set height to 60% of its container */
     }
     .hero-content h1 {
       font-size: 6rem;
       font-weight: bold;
       margin-bottom: 1rem;
-      color: #ff69b4;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     }
     .hero-content p {
       font-size: 2.5rem;
       margin-bottom: 2rem;
-      font-style: italic; 
-      color: #00ffff;
     }
     .grid-container {
       display: grid;
@@ -132,13 +125,16 @@
       opacity: 1 !important; /* Show the image fully if done */
       filter: none !important; /* Remove blur if done */
     }
+    .pink-text {
+      color: #ff69b4; /* 粉色 */
+    }
   </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900">
   <div class="hero-section">
     <img id="heroBackground" src="https://placehold.co/1920x600" alt="Hero Background" class="hero-background">
     <div class="hero-content">
-      <h1>100 Things I Want to Do With You</h1>
+      <h1>100 Things <span class="white-text">I </span> <span class="white-text">Want </span> to Do With <span class="white-text">you </span></h1>
       <p>Creating Memories Together, One Adventure at a Time.</p>
     </div>
   </div>
