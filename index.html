@@ -153,112 +153,111 @@
 
     // Array of descriptions for each image with haveDone property
 const descriptions = [
-  { text: "一起散步 🚶‍♂️🚶‍♀️", haveDone: true },
-  { text: "一起看电影 🎬", haveDone: true },
-  { text: "一起过生日 🎂", haveDone: false },
-  { text: "一起旅行 ✈️", haveDone: true },
-  { text: "一起看日出 🌄", haveDone: false },
-  { text: "一起看日落 🌅", haveDone: false },
-  { text: "一起爬山 🏔️", haveDone: false },
-  { text: "一起看海 🌊", haveDone: false },
-  { text: "一起游泳 🏊‍♂️", haveDone: false },
-  { text: "一起跨年 🎆", haveDone: false },
-  { text: "一起拍照 📸", haveDone: true },
-  { text: "一起滑冰 ⛸️", haveDone: false },
-  { text: "一起堆雪人 ☃️", haveDone: false },
-  { text: "一起滑雪 ⛷️", haveDone: true },
-  { text: "一起买菜 🛒", haveDone: true },
-  { text: "一起下厨 🍳", haveDone: true },
-  { text: "一起洗碗 🧼", haveDone: true },
-  { text: "一起划船 🚣‍♂️", haveDone: false },
-  { text: "一起唱歌 🎤", haveDone: true },
-  { text: "一起跑步 🏃‍♂️", haveDone: false },
-  { text: "一起穿情侣装逛街 👫", haveDone: false },
-  { text: "一起看演唱会 🎵", haveDone: false },
-  { text: "一起写情书 💌", haveDone: false },
-  { text: "一起坐摩天轮 🎡", haveDone: false },
-  { text: "一起唱一首歌 🎶", haveDone: false },
-  { text: "一起去迪士尼 🏰", haveDone: false },
-  { text: "一起去书店 📚", haveDone: false },
-  { text: "一起DIY 🛠️", haveDone: false },
-  { text: "一起看烟花 🎆", haveDone: false },
-  { text: "一起蹦极 🧗‍♂️", haveDone: false },
-  { text: "一起吃西瓜 🍉", haveDone: false },
-  { text: "一起去鬼屋 👻", haveDone: false },
-  { text: "一起淋雨 ☔", haveDone: false },
-  { text: "一起吹海风 🌬️", haveDone: false },
-  { text: "一起看星星 🌠", haveDone: false },
-  { text: "一起打游戏 🎮", haveDone: false },
-  { text: "一起放风筝 🪁", haveDone: false },
-  { text: "一起逛超市 🛒", haveDone: false },
-  { text: "一起敷面膜 💆‍♂️", haveDone: false },
-  { text: "一起打扑克 🃏", haveDone: false },
-  { text: "一起吃宵夜 🌙", haveDone: false },
-  { text: "一起睡懒觉 😴", haveDone: false },
-  { text: "一起打羽毛球 🏸", haveDone: false },
-  { text: "一起过山车 🎢", haveDone: true },
-  { text: "一起放孔明灯 🏮", haveDone: false },
-  { text: "一起去游乐园 🎠", haveDone: true },
-  { text: "一起去动物园 🦁", haveDone: false },
-  { text: "一起吃路边摊 🍢", haveDone: false },
-  { text: "一起看恐怖片 🎃", haveDone: false },
-  { text: "一起收拾房间 🧹", haveDone: false },
-  { text: "一起过情人节 💖", haveDone: false },
-  { text: "一起过圣诞 🎄", haveDone: false },
-  { text: "一起过儿童节 🎈", haveDone: false },
-  { text: "一起翻童年相册 📸", haveDone: false },
-  { text: "一起庆祝纪念日 🎉", haveDone: false },
-  { text: "一起换情侣头像 📸", haveDone: false },
-  { text: "一起养一只宠物 🐾", haveDone: false },
-  { text: "一起疯狂一次 🤪", haveDone: false },
-  { text: "一起拍视频 🎥", haveDone: false },
-  { text: "一起看电视 📺", haveDone: false },
-  { text: "一起发朋友圈 📱", haveDone: false },
-  { text: "一起完成一件事 🏆", haveDone: false },
-  { text: "生病时陪伴TA 🤒", haveDone: false },
-  { text: "一起去海底世界 🐠", haveDone: true },
-  { text: "一起用情侣手机壳 📱", haveDone: false },
-  { text: "尝试公主抱 👸", haveDone: false },
-  { text: "为对方剥虾 🦐", haveDone: true },
-  { text: "陪他看球赛 ⚽", haveDone: false },
-  { text: "陪他刮胡子 🪒", haveDone: true },
-  { text: "穿他的衣服 👕", haveDone: true },
-  { text: "送TA一束花 💐", haveDone: true },
-  { text: "给TA唱首歌 🎵", haveDone: false },
-  { text: "等对方下班 🕔", haveDone: false },
-  { text: "帮彼此吹头发 💨", haveDone: true },
-  { text: "盖一床被子 🛏️", haveDone: true },
-  { text: "背TA走一段路 🚶", haveDone: false },
-  { text: "打一晚电话 ☎️", haveDone: true },
-  { text: "靠着TA肩膀睡觉 💤", haveDone: false },
-  { text: "一个用力的拥抱 🤗", haveDone: true },
-  { text: "一次炙热的接吻 💋", haveDone: true },
-  { text: "教对方一个特长 🎓", haveDone: false },
-  { text: "一起去寺庙祈福 🙏", haveDone: false },
-  { text: "一个浪漫的告白 💕", haveDone: false },
-  { text: "为TA做一次蛋糕 🎂", haveDone: false },
-  { text: "互相给对方化妆 💄", haveDone: false },
-  { text: "为对方挑衣服 👗", haveDone: true },
-  { text: "吃一次烛光晚餐 🕯️", haveDone: false },
-  { text: "讲故事哄TA入睡 🌙", haveDone: false },
-  { text: "去彼此母校走一走 🎓", haveDone: false },
-  { text: "为对方做一次早饭 🍳", haveDone: false },
-  { text: "介绍给彼此的朋友 👭", haveDone: false },
-  { text: "用同一副耳机听歌 🎧", haveDone: true },
-  { text: "为对方制造小惊喜 🎉", haveDone: false },
-  { text: "坐在TA的单车后座 🚴", haveDone: false },
-  { text: "一起吃肯德基 🍗", haveDone: false },
-  { text: "见过彼此父母 👨‍👩‍👦", haveDone: false },
-  { text: "一套属于我们的家 🏠", haveDone: false },
-  { text: "一起装修小窝 🛠️", haveDone: false },
-  { text: "领证 💍", haveDone: false },
-  { text: "结婚 👰🤵", haveDone: false }
+  { id: 1, text: "一起散步 🚶‍♂️🚶‍♀️", haveDone: true, image: "images/1-walk.jpg"},
+  { id: 2, text: "一起看电影 🎬", haveDone: true,image: "images/2-movie.jpg"},
+  { id: 3, text: "一起过生日 🎂", haveDone: false,image: "images/3-birthday.jpg"},
+  { id: 4, text: "一起旅行 ✈️", haveDone: true,image: "images/4-travel.jpg"},
+  { id: 5, text: "一起看日出 🌄", haveDone: false,image: "images/5-sunrise.jpg"},
+  { id: 6, text: "一起看日落 🌅", haveDone: false,image: "images/6-the-sun-drops-below-the-watery-horizon.jpg"},
+  { id: 7, text: "一起爬山 🏔️", haveDone: false,image: "images/7-person-leads-someone-by-the-hand-down-a-hiking-trail.jpg"},
+  { id: 8, text: "一起看海 🌊", haveDone: false,image: "images/8-sea-wading.jpg"},
+  { id: 9, text: "一起游泳 🏊‍♂️", haveDone: false,image: "images/9-swimming-pool-with-ornate-ceiling-and-columns.jpg"},
+  { id: 10, text: "一起跨年 🎆", haveDone: false,image: "images/10-happy-new-year-of-the-dog.jpg"},
+  { id: 11, text: "一起拍照 📸", haveDone: true,image: "images/11-selfie-hikers-on-cobblestone-hill.jpg"},
+  { id: 12, text: "一起滑冰 ⛸️", haveDone: false,image: "images/12-long-winter-shadows-aerial-of-skating-pond.jpg"},
+  { id: 13, text: "一起堆雪人 ☃️", haveDone: false,image: "images/13-snowman-on-a-winter-afternoon.jpg"},
+  { id: 14, text: "一起滑雪 ⛷️", haveDone: true,image: "images/14-person-cuts-through-the-snow-on-skis.jpg"},
+  { id: 15, text: "一起买菜 🛒", haveDone: true,image: "images/15-person-uses-a-silver-shopping-basket-to-shop-for-groceries - ??.jpg"},
+  { id: 16, text: "一起下厨 🍳", haveDone: true,image: "images/16-shellfish-pasta-pizza-and-italian-food.jpg"},
+  { id: 17, text: "一起洗碗 🧼", haveDone: true,image: "images/17-pexels-cottonbro-4112727.jpg"},
+  { id: 18, text: "一起划船 🚣‍♂️", haveDone: false,image: "images/18-people-kayak-on-a-cloudy-day-with-a-boat-following.jpg"},
+  { id: 19, text: "一起唱歌 🎤", haveDone: true,image: "images/19-record-playing-music.jpg"},
+  { id: 20, text: "一起跑步 🏃‍♂️", haveDone: false,image: "images/20-pexels-runffwpu-2402777.jpg"},
+  { id: 21, text: "一起穿情侣装逛街 👫", haveDone: false,image: "images/21-9krc1exw.png"},
+  { id: 22, text: "一起看演唱会 🎵", haveDone: false,image: "images/22-pexels-wendywei-1190297.jpg"},
+  { id: 23, text: "一起写情书 💌", haveDone: false,image: "images/23-pexels-pixabay-99562.jpg"},
+  { id: 24, text: "一起坐摩天轮 🎡", haveDone: false,image: "images/24-pexels-punttim-2280358.jpg"},
+  { id: 25, text: "一起唱一首歌 🎶", haveDone: false,image: "images/25-pexels-everson-mayer-478307-1481312.jpg"},
+  { id: 26, text: "一起去迪士尼 🏰", haveDone: false,image: "images/26-pexels-rick98-3428289.jpg"},
+  { id: 27, text: "一起去书店 📚", haveDone: false,image: "images/27-pexels-tuurt-626986.jpg"},
+  { id: 28, text: "一起DIY 🛠️", haveDone: false,image: "images/28-pexels-cottonbro-4690313.jpg"},
+  { id: 29, text: "一起看烟花 🎆", haveDone: false,image: "images/29-pexels-dreamsky-258557-790916.jpg"},
+  { id: 30, text: "一起蹦极 🧗‍♂️", haveDone: false,image: "images/30-pexels-jan-van-der-wolf-11680885-15884724.jpg"},
+  { id: 31, text: "一起吃西瓜 🍉", haveDone: false,image: "images/31-pexels-scottwebb-140908.jpg"},
+  { id: 32, text: "一起去鬼屋 👻", haveDone: false,image: "images/32-pexels-yuyang-zhang-1354920916-25785552.jpg"},
+  { id: 33, text: "一起淋雨 ☔", haveDone: false,image: "images/33-pexels-apasaric-1530423.jpg"},
+  { id: 34, text: "一起吹海风 🌬️", haveDone: false,image: "images/34-pexels-clement-proust-363898785-20763190.jpg"},
+  { id: 35, text: "一起看星星 🌠", haveDone: false,image: "images/35-pexels-kaip-1341279.jpg"},
+  { id: 36, text: "一起打游戏 🎮", haveDone: false,image: "images/36-pexels-jeshoots-com-147458-442576.jpg"},
+  { id: 37, text: "一起放风筝 🪁", haveDone: false,image: "images/37-pexels-fox-58267-929362.jpg"},
+  { id: 38, text: "一起逛超市 🛒", haveDone: false,image: "images/38-person-uses-a-silver-shopping-basket-to-shop-for-groceries.jpg"},
+  { id: 39, text: "一起敷面膜 💆‍♂️", haveDone: false,image: "images/39-pexels-ekaterinamitkina-9898720.jpg"},
+  { id: 40, text: "一起打扑克 🃏", haveDone: false,image: "images/40-pexels-koolshooters-7332036.jpg"},
+  { id: 41, text: "一起吃宵夜 🌙", haveDone: false,image: "images/41-supper-5161710_1920.jpg"},
+  { id: 42, text: "一起睡懒觉 😴", haveDone: false,image: "images/42-kate-stone-matheson-uy5t-CJuIK4-unsplash.jpg"},
+  { id: 43, text: "一起打羽毛球 🏸", haveDone: false,image: "images/43-pexels-ian-panelo-3064150.jpg"},
+  { id: 44, text: "一起过山车 🎢", haveDone: true,image: "images/44-roller-coaster-7942853_1920.jpg"},
+  { id: 45, text: "一起放孔明灯 🏮", haveDone: false,image: "images/45-kong-ming-lantern-787848_1920.jpg"},
+  { id: 46, text: "一起去游乐园 🎠", haveDone: true,image: "images/46-arcade-981660_1920.jpg"},
+  { id: 47, text: "一起去动物园 🦁", haveDone: false,image: "images/47-stork-5828727_1920.jpg"},
+  { id: 48, text: "一起吃路边摊 🍢", haveDone: false,image: "images/48-china-6788187_1920.jpg"},
+  { id: 49, text: "一起看恐怖片 🎃", haveDone: false,image: "images/49-person-standing-in-the-shadows.jpg"},
+  { id: 50, text: "一起收拾房间 🧹", haveDone: false,image: "images/50-bins-and-baskets-filled-with-clothing.jpg"},
+  { id: 51, text: "一起过情人节 💖", haveDone: false, image: "" },
+  { id: 52, text: "一起过圣诞 🎄", haveDone: false, image: "" },
+  { id: 53, text: "一起过儿童节 🎈", haveDone: false, image: "" },
+  { id: 54, text: "一起翻童年相册 📸", haveDone: false, image: "" },
+  { id: 55, text: "一起庆祝纪念日 🎉", haveDone: false, image: "" },
+  { id: 56, text: "一起换情侣头像 📸", haveDone: false, image: "" },
+  { id: 57, text: "一起养一只宠物 🐾", haveDone: false, image: "" },
+  { id: 58, text: "一起疯狂一次 🤪", haveDone: false, image: "" },
+  { id: 59, text: "一起拍视频 🎥", haveDone: false, image: "" },
+  { id: 60, text: "一起看电视 📺", haveDone: false, image: "" },
+  { id: 61, text: "一起发朋友圈 📱", haveDone: false, image: "" },
+  { id: 62, text: "一起完成一件事 🏆", haveDone: false, image: "" },
+  { id: 63, text: "生病时陪伴TA 🤒", haveDone: false, image: "" },
+  { id: 64, text: "一起去海底世界 🐠", haveDone: true, image: "" },
+  { id: 65, text: "一起用情侣手机壳 📱", haveDone: false, image: "" },
+  { id: 66, text: "尝试公主抱 👸", haveDone: false, image: "" },
+  { id: 67, text: "为对方剥虾 🦐", haveDone: true, image: "" },
+  { id: 68, text: "陪他看球赛 ⚽", haveDone: false, image: "" },
+  { id: 69, text: "陪他刮胡子 🪒", haveDone: true, image: "" },
+  { id: 70, text: "穿他的衣服 👕", haveDone: true, image: "" },
+  { id: 71, text: "送TA一束花 💐", haveDone: true, image: "" },
+  { id: 72, text: "给TA唱首歌 🎵", haveDone: false, image: "" },
+  { id: 73, text: "等对方下班 🕔", haveDone: false, image: "" },
+  { id: 74, text: "帮彼此吹头发 💨", haveDone: true, image: "" },
+  { id: 75, text: "盖一床被子 🛏️", haveDone: true, image: "" },
+  { id: 76, text: "背TA走一段路 🚶", haveDone: false, image: "" },
+  { id: 77, text: "打一晚电话 ☎️", haveDone: true, image: "" },
+  { id: 78, text: "靠着TA肩膀睡觉 💤", haveDone: false, image: "" },
+  { id: 79, text: "一个用力的拥抱 🤗", haveDone: true, image: "" },
+  { id: 80, text: "一次炙热的接吻 💋", haveDone: true, image: "" },
+  { id: 81, text: "教对方一个特长 🎓", haveDone: false, image: "" },
+  { id: 82, text: "一起去寺庙祈福 🙏", haveDone: false, image: "" },
+  { id: 83, text: "一个浪漫的告白 💕", haveDone: false, image: "" },
+  { id: 84, text: "为TA做一次蛋糕 🎂", haveDone: false, image: "" },
+  { id: 85, text: "互相给对方化妆 💄", haveDone: false, image: "" },
+  { id: 86, text: "为对方挑衣服 👗", haveDone: true, image: "" },
+  { id: 87, text: "吃一次烛光晚餐 🕯️", haveDone: false, image: "" },
+  { id: 88, text: "讲故事哄TA入睡 🌙", haveDone: false, image: "" },
+  { id: 89, text: "去彼此母校走一走 🎓", haveDone: false, image: "" },
+  { id: 90, text: "为对方做一次早饭 🍳", haveDone: false, image: "" },
+  { id: 91, text: "介绍给彼此的朋友 👭", haveDone: false, image: "" },
+  { id: 92, text: "用同一副耳机听歌 🎧", haveDone: true, image: "" },
+  { id: 93, text: "为对方制造小惊喜 🎉", haveDone: false, image: "" },
+  { id: 94, text: "坐在TA的单车后座 🚴", haveDone: false, image: "" },
+  { id: 95, text: "一起吃肯德基 🍗", haveDone: false, image: "" },
+  { id: 96, text: "见过彼此父母 👨‍👩‍👦", haveDone: false, image: "" },
+  { id: 97, text: "一套属于我们的家 🏠", haveDone: false, image: "" },
+  { id: 98, text: "一起装修小窝 🛠️", haveDone: false, image: "" },
+  { id: 99, text: "领证 💍", haveDone: false, image: "" },
+  { id: 100, text: "结婚 👰🤵", haveDone: false, image: "" }
 ];
 
     // Function to fetch random images from Lorem Picsum
     async function fetchRandomImages() {
       try {
-        return "images/walk-together.jpg";
         const response = await fetch(`https://picsum.photos/seed/${Math.floor(Math.random() * 1000)}/256/256`);
         const imageUrl = response.url;
 
@@ -292,31 +291,22 @@ const descriptions = [
     }
 
     // Load initial set of images
-    async function loadInitialImages() {
+    function loadInitialImages() {
       try {
-        const promises = [];
         let imageIndex = 1;
-
         for (let row = 0; row < numRows; row++) {
           for (let col = 0; col < numImagesPerRow; col++) {
-            promises.push(fetchRandomImages().then(imageUrl => {
-              if (imageUrl) {
-                createImageElement(gallery, imageUrl, imageIndex);
-                imageIndex++;
-              }
-            }));
+              createImageElement(gallery, imageIndex);
+              imageIndex++;
           }
         }
-
-        await Promise.all(promises);
-
       } catch (error) {
         console.error('Error loading initial images:', error);
       }
     }
 
     // Function to create and append image elements
-    function createImageElement(container, imageUrl, index) {
+    function createImageElement(container, index) {
       // Create image container
       const imageContainer = document.createElement('div');
       imageContainer.className = 'image-container';
@@ -330,7 +320,7 @@ const descriptions = [
 
       // Create image element
       const imageElement = document.createElement('img');
-      imageElement.src = imageUrl;
+      imageElement.src = descriptions[index - 1].image;
       imageElement.alt = 'Gallery Image'; // You can add alt text dynamically if needed
       imageElement.classList.add('rounded-lg');
       imageContainer.appendChild(imageElement);
