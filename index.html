@@ -137,7 +137,7 @@
   </div>
 
   <div class="mt-8 px-4">
-    <h2 class="text-2xl font-semibold mb-4">Here we go</h2>
+    <h2 class="text-2xl font-semibold mb-4"></h2>
     <div class="grid-container">
       <!-- Images will be loaded here -->
     </div>
@@ -245,19 +245,20 @@ const descriptions = [
   { text: "为对方做一次早饭 🍳", haveDone: false },
   { text: "介绍给彼此的朋友 👭", haveDone: false },
   { text: "用同一副耳机听歌 🎧", haveDone: true },
-{ text: "为对方制造小惊喜 🎉", haveDone: false },
-{ text: "坐在TA的单车后座 🚴", haveDone: false },
-{ text: "一起吃肯德基 🍗", haveDone: false },
-{ text: "见过彼此父母 👨‍👩‍👦", haveDone: false },
-{ text: "一套属于我们的家 🏠", haveDone: false },
-{ text: "一起装修小窝 🛠️", haveDone: false },
-{ text: "领证 💍", haveDone: false },
-{ text: "结婚 👰🤵", haveDone: false }
+  { text: "为对方制造小惊喜 🎉", haveDone: false },
+  { text: "坐在TA的单车后座 🚴", haveDone: false },
+  { text: "一起吃肯德基 🍗", haveDone: false },
+  { text: "见过彼此父母 👨‍👩‍👦", haveDone: false },
+  { text: "一套属于我们的家 🏠", haveDone: false },
+  { text: "一起装修小窝 🛠️", haveDone: false },
+  { text: "领证 💍", haveDone: false },
+  { text: "结婚 👰🤵", haveDone: false }
 ];
 
     // Function to fetch random images from Lorem Picsum
     async function fetchRandomImages() {
       try {
+        return "images/walk-together.jpg";
         const response = await fetch(`https://picsum.photos/seed/${Math.floor(Math.random() * 1000)}/256/256`);
         const imageUrl = response.url;
 
