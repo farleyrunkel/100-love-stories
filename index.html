@@ -330,10 +330,24 @@
         fetchRandomImages().then(imageUrl => {
           if (imageUrl) {
             imageElement.src = imageUrl;
+            imageElement.alt = 'Gallery Image'; // You can add alt text dynamically if needed
+            imageElement.classList.add('rounded-lg');
+            imageContainer.appendChild(imageElement);
+
+            // Create image description
+            const descriptionElement = document.createElement('div');
+            descriptionElement.className = 'image-description';
+            descriptionElement.textContent = descriptions[index - 1].text; // Set initial description text
+            imageContainer.appendChild(descriptionElement);
+
+            // Append image container to gallery
+            container.appendChild(imageContainer);
+            setRandomHeroBackground();
+            loadInitialImages();
           }
         });
       }
-      
+else {
       imageElement.alt = 'Gallery Image'; // You can add alt text dynamically if needed
       imageElement.classList.add('rounded-lg');
       imageContainer.appendChild(imageElement);
@@ -346,11 +360,12 @@
 
       // Append image container to gallery
       container.appendChild(imageContainer);
-    }
-
-    // Set initial hero background and load images
+          // Set initial hero background and load images
     setRandomHeroBackground();
     loadInitialImages();
+    }
+  }
+
   </script>
 </body>
 </html>
