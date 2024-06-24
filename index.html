@@ -327,7 +327,7 @@
       const imageElement = document.createElement('img');
       imageElement.src = descriptions[index - 1].image;
       if (imageElement.src == "") {
-        imageElement.src = setRandomHeroBackground();
+        imageElement.src = fetchRandomImages();
       }
       imageElement.alt = 'Gallery Image'; // You can add alt text dynamically if needed
       imageElement.classList.add('rounded-lg');
